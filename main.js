@@ -1,11 +1,11 @@
-wrapper.addEventListener('click', function(x){
+$(click).on('click', function(){
+    $(popover).show()
+})
+
+$(wrapper).on('click', function(x){
     x.stopPropagation()
 })
 
-click.addEventListener('click', function(){
-    popover.style.display = 'block'
-})
-
-document.addEventListener('click', function(){
-    popover.style.display = 'none'
+$(document).on('click', function(){
+    $(popover).hide()
 })
