@@ -1,10 +1,8 @@
-click.addEventListener('click', function(){
+click.addEventListener('click', function(x){
     popover.style.display = 'block'
-    console.log(1)
-    debugger
+    x.stopPropagation()
 })
 
 document.addEventListener('click', function(){
     popover.style.display = 'none'
-    console.log(2)
 })
