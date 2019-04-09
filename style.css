@@ -1,0 +1,15 @@
+.wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.popover{
+    position: absolute;
+    border: 1px red solid;
+    left: 100%;
+    top: 0;
+    white-space: nowrap;
+    padding: 5px;
+    margin-left: 5px;
+    display: none;
+}
